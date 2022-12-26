@@ -2,7 +2,7 @@
 Scrapes all NFT information on the Opensea ranks
 
 Require: 
-  - install ChromeDiver 
+  - install ChromeDriver 
   - `pip install selenium`
   - `pip install requests`
   
