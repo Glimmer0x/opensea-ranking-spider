@@ -1,20 +1,11 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
 import json
-
-chainOptions = [
-    "arbitrum",
-    "avalanche",
-    "bsc",
-    "ethereum",
-    "klaytn",
-    "optimism",
-    "matic",
-    "solana"
-]
+from options import chainOptions
 
 
 def getInfoByContract(address, chain):
+    assert chain, "chain must be provided"
     assert chain in chainOptions, "chain must be one of the following: " + \
         ", ".join(chainOptions)
 
